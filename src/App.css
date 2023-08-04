@@ -70,3 +70,14 @@
   object-fit: cover;
   margin: 20px auto;
 }
+.prod
+{
+  display: flex;
+  flex-direction: column;
+  width:fit-content;
+  margin-left: 43%;
+}
+.opt
+{
+  padding: 20px;
+}
