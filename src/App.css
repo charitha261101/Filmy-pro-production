@@ -3,50 +3,30 @@
   padding:0;
   text-decoration: none;
 }
-.d
-{
-text-align: center;
-}
-.p{
-text-align: center;
-}
-.top{
-  text-align: center;
-  float: left;
-}
-.sidebar{
+.Sidebar{
   background-color:rgb(100, 100, 178);
   color: white;
-  width: fit-content;
+  width:200px;
   top:0;
   bottom: 0;
   left: 0;
   position: fixed;
-  padding: 15px 10px;
-  transition: transform 0.3s;
-  transform: translateX(-100%);
-  text-align: center;
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding-top: 10%;
 }
-.sidebar.open {
-  transform: translateX(0);
-}
-.top button{
-  font-weight: 500;
-}
-.b{
-  float: left;
+.S{
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap:60vh;
 }
-.t{
-  justify-content: center;
-  display: flex;
-  background-color: rgb(100, 100, 178);
+.Sb{
+  background-color: rgb(101, 172, 172);
+  border-radius: 5px 5px;
+  color: black;
+  padding: 10px;
 }
 .link{
   color: white;
@@ -61,4 +41,32 @@ text-align: center;
 .active {
   background-color: lightskyblue;
   color: black;
+}
+.a{
+  margin-top: 40%;
+}
+.addimage{
+  text-align: center;
+  background-color: rgb(19, 19, 130);
+  height:200px;
+  width:200px;
+  cursor: pointer;
+  color:white;
+  margin: 5% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.b{
+  text-align: center;
+  float: right;
+}
+.addimage label{
+  margin-top: 20px;
+}
+.preview-image {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 20px auto;
 }
