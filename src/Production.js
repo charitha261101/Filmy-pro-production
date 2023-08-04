@@ -1,6 +1,6 @@
 import './App.css';
 import {useState} from 'react';
-import {Button, Typography} from "@mui/material";
+import {Button, Typography,TextField} from "@mui/material";
 function Production()
 {
     const [image,setImage]=useState(null);
@@ -34,7 +34,24 @@ function Production()
         Selected Image: {image.name}
         </Typography>
         )}
-
+        <div className='prod'>
+        <TextField variant='outlined' label="Production Name"/>
+        <Typography variant='body1'>Type of Production</Typography>
+        <select className='opt'>
+            <option>Select Option</option>
+            <option>Feature Film</option>
+            <option>Short Film</option>
+            <option>TV Series</option>
+            <option>Documentary</option>
+            <option>Corporate Film</option>
+            <option>Web Series</option>
+            <option>Episode</option>
+            <option>News Cast</option>
+            <option>Stage Production</option>
+            <option>Mini Series</option>
+            <option>Clip</option>  
+        </select>
+        </div>
         <Button variant="outlined" color="primary" className='b'>Add New Production</Button>
         </>
     )
